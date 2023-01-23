@@ -2,7 +2,7 @@
 # script to configure in order to serve the static pages
 apt-get -y update
 apt-get -y install nginx
-ufw allow 'Nginx HTTP'
+service nginx start
 # instructions
 mkdir -p /data/web_static/releases/test/
 mkdir -p /data/web_static/shared/
@@ -10,7 +10,7 @@ echo "<html>
   <head>
   </head>
   <body>
-    Fake content
+    Test content
   </body>
 </html>" > /data/web_static/releases/test/index.html
 # symbolic link to folder erase
