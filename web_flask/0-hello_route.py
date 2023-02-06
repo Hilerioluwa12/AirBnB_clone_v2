@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ Create a web application that listen in port 5000 flask
+Routes:
+	/: Displays 'Hello HBNB!'
 """
 from flask import Flask
 app = Flask(__name__)
