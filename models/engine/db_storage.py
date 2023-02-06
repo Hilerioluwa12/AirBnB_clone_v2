@@ -85,6 +85,6 @@ class DBStorage:
 
     def close(self):
         """
-            Remove private session attribute
+            close session method Airbnb flask
         """
         self.__session.close()
