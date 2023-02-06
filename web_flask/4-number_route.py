@@ -42,6 +42,7 @@ def python(text="is cool"):
     text = text.replace("_", " ")
     return "Python {}".format(text)
 
+
 @app.route("/number/<int:n>", strict_slashes=False)
 def number(n):
     """ Display 'n' if it is a number then value <n>.
