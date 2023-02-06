@@ -8,6 +8,7 @@ Routes:
     /python/(<text>): Displays 'Python' followed by the value of <text>.
 """
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -51,7 +52,7 @@ def number(n):
 
 
 @app.route("/number_template/<int:n>", strict_slashes=False)
-def render(n):
+def number_template(n):
     """ Display a HTML page only if n is an integer.
     """
     return render_template("5-number.html", n=n)       
